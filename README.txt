@@ -14,6 +14,11 @@ Please note:
 The custom login requires more secure encryption of passwords, 
 users should have their own salt.
 
+There is also one failing test - I haven't bothered to fix it, but if people use this stuff
+then I might spend more time on it!
+
+Suggestions for improvements are welcome!
+
 == Requirements ==
 
 Ruby (I'm using ruby 1.9.3)
@@ -36,6 +41,10 @@ Get twitter keys to try out omniauth ( https://dev.twitter.com/apps/new )
 Set these as environment variables (I put them in .bashrc)
 	TWITTER_KEY,
   TWITTER_SECRET_KEY
+  
+=== Run the tests ===
+start mongo
+type 'autotest'
 
 === It's alive, alive! ====
 To start type in 'rackup' and you're all set to go!
