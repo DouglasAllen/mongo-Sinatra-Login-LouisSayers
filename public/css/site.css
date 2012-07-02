@@ -1,0 +1,184 @@
+html, body {
+    background-color: #EEEEEE;
+    background-image: none;
+}
+
+#content {
+	background-color:#fff;
+	margin-top:0px;
+}
+
+#header {
+	background-color:black;
+}
+
+#logo, a#homeLink {
+	height:190px;
+}
+
+h4, h5, h6 {
+	font-weight:normal;
+}
+
+#page_content {
+	margin:20px;
+}
+
+.navbar {
+	margin-bottom:0px;
+}
+
+#logout {
+	position:absolute;
+	float:right; 
+	margin: 10px 15px 0 880px;
+}
+
+#logout, #logout a, #logout a:visited {
+	color: #aaa;
+}
+
+.sign_in_box {
+	margin: 00px 15px 15px 15px;
+	
+}
+
+#or {
+	font-weight:bold;
+	font-size: 2em;
+	margin-top: 90px;
+}
+
+.sign_in_box .terms {
+	color: #787878;
+    font-size: 12px;
+    font-weight: 300;
+    left: 7px;
+	margin-top: 25px;
+    position: relative;
+}
+
+
+.sign_in_button a {
+	background-color: #2989D8;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5B7DA5), color-stop(100%, #165B89));
+	background-image: -webkit-linear-gradient(#2989D8, #165B89);
+	background-image: -moz-linear-gradient(#2989D8, #165B89);
+	background-image: -o-linear-gradient(#2989D8, #165B89);
+	background-image: -ms-linear-gradient(#2989D8, #165B89);
+	background-image: linear-gradient(#2989D8,#165B89);
+    border-radius: 6px 6px 6px 6px;
+    border-top: 2px solid #215EA8;
+    border-width: 2px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.3);
+    color: #C8D6DD !important;
+    font: 400 23px/14px "Helvetica Neue","Helvetica","Arial","sans-serif";
+    left: 6px;
+    letter-spacing: 1px;
+    padding: 13px 46px 15px 58px;
+    position:relative;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.sign_in_button  a:hover {
+	background-color: #5B7DA5;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5B7DA5), color-stop(100%, #4386BC));
+	background-image: -webkit-linear-gradient(#5B7DA5, #4386BC);
+	background-image: -moz-linear-gradient(#5B7DA5, #4386BC);
+	background-image: -o-linear-gradient(#5B7DA5, #4386BC);
+	background-image: -ms-linear-gradient(#5B7DA5, #4386BC);
+	background-image: linear-gradient(#5B7DA5,#4386BC);
+    text-decoration: none;
+	cursor: pointer;
+}
+
+.sign_in_button a:active {
+	background-color: #426FA5;
+	background-image: -moz-linear-gradient(#6180A3, #426FA5);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+.sign_in_button a:before {
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAB0klEQVRYR+2WzStEURjG514SUTPK2MyGlQUWsmAjG6xnIwuUUr629v4CFpKlUnakFCubka+dWFtYiY2ykCjTXL+37uh0OzP33A9JnVtP93rP8z7nOc+cc5LJ2McmYBOwCfzDBDzPc0Dbn1rHQFOlUtkGd3yf8V5K1RCiOURbTETh7cD3eH+CAzBg0mfMQXAIvIIt0FurEQ9FMaI+8OXZM11MqCnEXcSu/RWL+CnfY7Ivqs18N1K/D5qp/s3YscoPnbQeAbFOcBNY9RW1YemjPlnLiGJoOpGJajOTbugmo/4FVkDJwMylkmSDzthP1CHJFBi/cBynO8gTE9RDdaCV6T0EzaDkuu5m7KRYfV6Oa1gC9cbReJDjDqdLZ8SN4K4IdzQCX0fNU5zBTE8iHfk1WNUiOAcfUROSVFI7Ucrmm4tqxL8W1hKloWtmhSP+b182NQX/GW42lhkaB4H2+Ekd8VVgZMY//hOxjPiXWDuT7iK0DPpBAfT5e+Y2QiJyD83GNqLsjSxCJ6YTB3n0PoHxxEYUQ3KC5sGjqSm4b2Adfi41I6oQwvJ/yhTvfZ0x2aDgiPGF2BuVCUOv8RonqpV6hz/2wtX+/ispWFGbgE3AJpByAt8A0XOtImOh9wAAAABJRU5ErkJggg==");
+	content: "";
+    height: 35px;
+    left: 12%;
+    margin-left: -14px;
+    margin-top: -19px;
+    position: absolute;
+    top: 50%;
+    width: 35px;
+    z-index: 1;
+}
+
+.sign_in_button a:after {
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAVCAYAAABCIB6VAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAYpJREFUeNpidPfxZyACCAGxNBBfRhbcsXkDTg1MDMQBHk4urmPikpJORKon2mAGdnZ2nvS8ou1KqqqxVDUYBNjY2dni0zIXGZiYVlDVYBBgZmZhCImKbbdzdpns4RvAjEsdCxCnERl5KMDN2y+Hj19A2tM/MHr7xvXfsRk808TSiqDJXFxcGGIWNnaBfPz8e32DQn02r1v9DlmOEZjc/rf0TWKgBDx+cP/OojkzndevXPaI7DDGBmQVFFUyC0pORsQlGlPVYHAkiIhIpOcXH0jKzPWgqsEgwMvHx5OSnTc/t7SSh6oGA8EjYFq3ndzd/oWaBp8FYnMTVbk71AyK3UDsADT0BTUjbwEQ+wAN/YKeQUyI0CwBxFuwiHcADazEpgGUQRikZGQJGSwHjPGHsSnpMP5fIC4AGjoFX1nB8OzJY4JOFhAUhDFB5UL0v3//1lOzdAOVB86/f/9ev2LhPLwKWUhJo6BC7du3rzcXz5kJLB8eUMVgkEvNP7x/92LBjGkMb16/IqgBIMAANLxpHvZVT80AAAAASUVORK5CYII=");
+	content: "";
+    height: 21px;
+    left: 86%;
+    margin-top: -10.5px;
+    position: absolute;
+    top: 50%;
+    width: 22px;
+    z-index: 1;
+}
+
+.success {
+	color: green;
+}
+
+#loading {
+	display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('/img/loader.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+div.centered{
+    display:block;
+    padding-top:50px;
+	text-align:center;
+    /*set the div in the center of the screen*/
+    position:absolute;
+    top:50%;
+    left:35%;
+    width:350px;
+  }
+
+
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
+
+
+#contact_us p {
+	width: 150px;
+}
+
+
+#contact_us {
+	position:absolute;
+	float:right; 
+	margin: 164px 15px 0 712px;
+	color: white;
+	font-size: 1.3em;
+}

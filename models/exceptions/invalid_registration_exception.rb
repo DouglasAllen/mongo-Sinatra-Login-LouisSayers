@@ -1,0 +1,2 @@
+class InvalidRegistrationStep < Exception
+end

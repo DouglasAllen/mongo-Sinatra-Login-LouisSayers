@@ -1,0 +1,60 @@
+.form_info {
+	margin: 0px 10px 10px 20px; 
+}
+
+.control-group {
+	clear:left;
+}
+
+.form_content {
+	margin-top:25px;
+}
+
+.form-horizontal .control-group > label {
+	width:90px;
+}
+
+.form-horizontal .controls {
+    margin-left: 100px;
+}
+
+.btn-primary {
+	float:right;	
+}
+
+.form-actions {
+	clear:left;
+}
+
+.errors {
+	margin-left: 68px;
+}
+
+#loginErrors {
+	margin-left:20px;
+}
+
+
+.error {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+
+.error_message {
+	margin-left: 100px;
+	
+	float:left;
+	width: 150px;
+}
+
+.error_message label[for=email] {
+	width: 250px;
+}
+
+.already_uploaded {
+	color: green;
+	margin-right: 23px;
+}
+

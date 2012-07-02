@@ -1,0 +1,67 @@
+<% @form_data = defined?(form_data) ? form_data : {} %>
+<% @login_data = (defined?(login) && login)? @form_data : {} %>
+<% @register_data = (defined?(register) && register)? @form_data : {} %>
+
+<div id="page_content">
+	<% if defined?(errors) %>
+		<div id="loginErrors" class="errors">
+			<ul>
+				<% errors.each do |error, message| %>
+					<li class="error"><%=error%> - <%=message%></li>
+				<% end %>
+			</ul>
+		</div>
+	<% end %>
+	<div class="sign_in_box span4">
+		<h3>Sign in:</h3>
+	    <form action="/login" method="post">
+	    	<fieldset>
+	    		<div class="control-group">
+	    			<label class="control-label" for="email">Your email</label>
+	    			<div class="controls">
+	    				<input id="email" name="data[email]" type="text" 
+	    					   class="input email required" value="<%=@login_data[:email] %>"/>
+	    			</div>
+	    		</div>
+	    		<div class="control-group">
+	    			<label class="control-label" for="password">Your password</label>
+	    			<div class="controls">
+	    				<input id="password" name="data[password]" type="password" class="input required" />
+	    			</div>
+	    		</div>
+	    		<div class="form-actions">
+		           <button type="submit" class="btn btn-primary">Login</button>
+		           <br style="clear:both;" />
+		         </div>
+	    	</fieldset>
+	    </form>
+	</div>
+	<div class="span2" id="or">
+		OR
+	</div>
+	<div class="register_box span4">
+		<h3>Register:</h3>
+	    <form action="/register" method="post">
+	    	<fieldset>
+	    		<div class="control-group">
+	    			<label class="control-label" for="email">Your email</label>
+	    			<div class="controls">
+	    				<input id="email" name="data[email]" type="text" 
+	    					   class="input email required" value="<%=@register_data[:email] %>" />
+	    			</div>
+	    		</div>
+	    		<div class="control-group">
+	    			<label class="control-label" for="password">Your password</label>
+	    			<div class="controls">
+	    				<input id="password" name="data[password]" type="password" class="input required" />
+	    			</div>
+	    		</div>
+	    		<div class="form-actions">
+		           <button type="submit" class="btn btn-primary">Register</button>
+		           <br style="clear:both;" />
+		         </div>
+	    	</fieldset>
+	    </form>
+	</div>
+	
+</div>

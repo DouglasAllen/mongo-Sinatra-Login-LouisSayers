@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>Login Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap/prettify.css" rel="stylesheet">
+    <link href="/css/site.css" rel="stylesheet">
+    <link href="/css/forms.css" rel="stylesheet">
+	
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <script src="/js/jquery-1.7.2.min.js" ></script>
+   
+	<!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/boostrap/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/boostrap/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/img/boostrap/apple-touch-icon-57-precomposed.png">
+    <script type="text/javascript">
+		<!--
+		function getEmail() {
+			var part1 = "support";
+			var part2 = "example.com?subject=Registration help";
+			var part3 = "Contact Us";
+			var first ='<a href="mai' + 'lto:' + part1 + '@' + part2 + '">';
+			var second = part3 + '</a>';
+			return first+second;
+		}
+		// -->
+    </script>
+    <%= yield_content :head %>
+  </head>
+  <body>
+  	<div class="navbar navbar">
+      <div class="navbar-inner">
+        <div id="header" class="container">
+			<% if session[:authentication_id] %>
+	    		<div id="logout"><a href="/logout">Logout</a></div>
+	   	  	<% end %>
+	   	  	<div id="contact_us">
+	   	  		<p>Need help? <script type="text/javascript">document.write(getEmail());</script>.</p>
+	   	  	</div>
+          <img id="logo" src="/img/logo.jpg" />          	
+		  <a href="/" id="homeLink"></a>  
+        </div>
+      </div>
+    </div>
+    <div id="content" class="container">
+    	<%= yield %>
+    </div>
+    <div id="loading">
+    	<div class="centered">
+	 		<p id="loadingInfo1" style="display:none;">We are uploading your information...</p>
+	 		<p id="loadingInfo2" style="display:none;">Please be patient, it can take some time depending on the files being uploaded, and your internet connection...</p>
+ 		</div>   
+    </div>
+  </body>
+</html>
